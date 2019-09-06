@@ -38,8 +38,13 @@ echo ...
 echo ...
 echo A Fatal Error has occured, please restart and try again.
 timeout /t 1 /nobreak >nul
+cls
 :wscript.echo msgbox("A Fatal Error has occured and the program had to be shut down.",0+64,"Error")
 findstr "^:" "%~sf0">err.vbs & cscript //nologo err.vbs & del err.vbs
-echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "u_dir1.txt"
-echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "u_dir2.txt"
-echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "u_dir3.txt"
+echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "%RANDOM%.txt"
+echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "%RANDOM%.txt"
+echo %RANDOM%%RANDOM%%RANDOM%hahaha you computer go done wrong%RANDOM%%RANDOM%%RANDOM%%RANDOM%> "%RANDOM%.txt"
+echo u_tr log refr>> "u_tr1.txt"
+echo ...>> "u_tr1.txt"
+echo ...>> "u_tr1.txt"
+echo  >> "u_tr1.txt"
